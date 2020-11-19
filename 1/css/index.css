@@ -1,0 +1,130 @@
+/* Common Styles */
+
+html {
+	background-color: #363636;
+	font-family: 'Roboto', sans-serif;
+	color: #fff;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+i {
+	cursor: pointer;
+}
+
+/* Common Styles End */
+
+/* App Styles */
+
+header {
+	position: relative;
+}
+
+/* Navbar styles */
+
+.navbar {
+	display: flex;
+	justify-content: flex-end;
+	height: 100px;
+	background-color: #2e92df;
+	font-size: 36px;
+	position: relative;
+}
+
+.navbar ul {
+	margin-right: 100px;
+	display: flex;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.navbar .navbar__item {
+	display: block;
+	margin-left: 20px;
+}
+
+.navbar .navbar__item:first-child {
+	margin-left: 0;
+}
+
+.navbar .navbar__item a {
+	transition: 0.1s all;
+}
+
+.navbar .navbar__item a:hover {
+	color: rgb(253, 139, 32);
+}
+
+/* Creates a bars */
+
+.navbar__burger {
+	display: none;
+	font-size: 36px;
+	cursor: pointer;
+	height: 35px;
+	width: 35px;
+	text-align: center;
+	position: absolute;
+	left: 2%;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+/* Navbar styles  End*/
+
+/* Left menu styles */
+
+.menu {
+	display: none;
+	position: absolute;
+	top: 0px;
+	width: 250px;
+	height: 100vh;
+	background-color: rgb(194, 194, 194);
+}
+
+/* Left menu styles end*/
+
+/* Media Queris Start */
+
+@media only screen and (max-width: 1199px) {
+	.navbar {
+		/* height: 100vh;
+		width: 250px;
+		display: flex;
+		justify-content: start; */
+	}
+
+	.navbar__burger {
+		display: block;
+		/* cursor: pointer;
+		z-index: 1;
+		top: 50px;
+		left: 50%;
+		transform: translate(-50%, 0); */
+	}
+
+	.navbar ul {
+		display: none;
+		padding-top: 100px;
+		margin: 0 auto;
+		flex-direction: column;
+		justify-content: start;
+		position: relative;
+	}
+
+	.navbar .navbar__item {
+		margin-top: 40px;
+		margin-left: 0;
+		text-align: center;
+	}
+}
+
+/* Media Queris End */
+
+/* App Styles End */
